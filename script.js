@@ -60,4 +60,45 @@ console.log(`Is my age greater than 18?`, isGreaterThan18); // Log the result
 const divisionResult = 100 / 0; // Perform the division
 console.log("Result of 100 / 0 is:", divisionResult); // Log the result
 
-// Question 13:
+// Question 13: create a variable using let and cosnole the value of that variable
+let myLetVariable = "Hello, let!"; // Define the variable myLetVariable
+console.log("Value of myLetVariable is:", myLetVariable); // Log the value of the variable  
+
+// Question 14: create a constant to store the value of PI
+const PI = Math.PI; // Define the constant PI
+console.log("Value of PI is:", PI); // Log the value of PI
+
+// Question 15: create a variable with let and reassign the value of that variable and see the result
+let myReassignableVariable = "Initial value"; // Define the variable myReassignableVariable
+console.log("Before reassignment, myReassignableVariable is:", myReassignableVariable); // Log the value before reassignment
+myReassignableVariable = "Reassigned value"; // Reassign the variable to a new value
+console.log("After reassignment, myReassignableVariable is:", myReassignableVariable); // Log the value after reassignment
+
+// Question 16: check type of null and log the result
+const nullValue = null; // Define the variable nullValue
+const nullType = typeof nullValue; // Get the type of the variable
+console.log(`The type of nullValue is:`, nullType); // Log the type of the variable
+
+// Question 17: check type of undefined and log the result
+const undefinedValue = undefined; // Define the variable undefinedValue
+const undefinedType = typeof undefinedValue; // Get the type of the variable
+console.log(`The type of undefinedValue is:`, undefinedType); // Log the type of the variable
+
+// Question 18: craete a variable of number as a string and then log it
+const numberAsString = "42"; // Define the variable numberAsString
+console.log("Value of numberAsString is:", numberAsString); // Log the value of the variable
+
+// Question 19: create three variable of string, number and boolean and log them
+const myString = "Hello, World!"; // Define the variable myString
+const myNumber = 42; // Define the variable myNumber
+const myBoolean = true; // Define the variable myBoolean
+console.log("String:", myString); // Log the string variable
+console.log("Number:", myNumber); // Log the number variable
+console.log("Boolean:", myBoolean); // Log the boolean variable
+
+// Question 20: use const to create an array and try to reassigning the  array and observe the error
+const myArray = [1, 2, 3,4,5,6]; // Define the array myArray
+console.log("Original array:", myArray); // Log the original array
+myArray.pop(); // Remove the last element from the array
+console.log("Array after pop:", myArray); // Log the array after removing the last element
+
