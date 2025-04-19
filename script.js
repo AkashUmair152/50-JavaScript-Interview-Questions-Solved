@@ -102,3 +102,64 @@ console.log("Original array:", myArray); // Log the original array
 myArray.pop(); // Remove the last element from the array
 console.log("Array after pop:", myArray); // Log the array after removing the last element
 
+
+// Question 21:create a for loop that prints numbers from 1 to 50
+for(let i = 1; i <= 50; i++) { // Loop from 1 to 50
+    console.log(i); // Log the current number
+}
+
+// Question 22: create a while loop to sum the numbers from 1 to 10
+
+let sum = 0; // Initialize the sum variable
+let j = 1; // Initialize the loop variable
+while (j <= 10) { // Loop from 1 to 10
+    sum += j; // Add the current number to the sum
+    // console.log("Current number:", j); // Log the current number
+    // console.log("Current sum:", sum); // Log the current sum
+    j++; // Increment the loop variable
+}
+console.log("Sum of numbers from 1 to 10 is:", sum); // Log the sum
+
+// Question 23: create for ..of loop to log each character of a string "JavaScript"
+const myString2 = "JavaScript"; // Define the string myString2
+for (const char of myString2) { // Loop through each character of the string
+    console.log(char); // Log the current character
+}
+
+// Question 24: create a for LOOP that skips even numbers from 1 to 20
+for (let k=1; k<=20; k++){ // Loop from 1 to 20
+    if (k % 2 === 0) { // Check if the number is even
+        continue; // Skip the even number
+    }
+    console.log(k); // Log the odd number
+}
+
+// Question 25: usingdo..while loop to log numbers from 10 to 1
+console.log("Numbers from 10 to 1:"); // Log the message
+let m = 10; // Initialize the loop variable
+do{
+    console.log(m); // Log the current number
+    m--; // Decrement the loop variable
+
+} while (m >= 1); // Continue until m is less than 1
+
+// Question 26: create a for loop that calculates the factorial of a 5
+let factorial = 1; // Initialize the factorial variable
+const numberToFactorial = 5; // Define the number to calculate the factorial
+for (let n = 5; n >0; n--) { // Loop from 1 to the number
+    factorial = factorial*n; // Multiply the current number to the factorial
+}
+console.log(`Factorial of ${numberToFactorial} is:`, factorial); // Log the factorial
+
+// Question 27: create a nested loop to print a 3x3 gird
+const rows = 3; // Define the number of rows
+const cols = 3; // Define the number of columns
+for (let row = 1; row <= rows; row++) { // Loop through each row
+    let gridRow = ""; // Initialize the gridRow variable
+    for (let col = 1; col <= cols; col++) { // Loop through each column
+        gridRow += `${row}${col} `; // Append the current row and column to the gridRow
+    }
+    console.log(gridRow); // Log the current row of the grid
+}
+
+// Question 28: 
