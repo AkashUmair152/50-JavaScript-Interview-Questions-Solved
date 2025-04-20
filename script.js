@@ -188,3 +188,74 @@ const myObject = { // Define the object myObject
 for (const key in myObject) { // Loop through each key in the object
     console.log(`Key: ${key}, Value: ${myObject[key]}`); // Log the key and its corresponding value
 }
+
+// Question 31: create an arry of 5 favorite fruits and log them using forEach
+
+const favoriteFruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"]; // Define the array favoriteFruits
+favoriteFruits.forEach((fruit) => { // Use forEach to iterate over the array
+    console.log(fruit); // Log each fruit
+});
+
+// Question 32: create an array and find and log  the 2nd  element of that array
+const myArray3 = [10, 20, 30, 40, 50]; // Define the array myArray3
+const secondElement = myArray3[1]; // Get the 2nd element of the array (index 1)
+console.log("2nd element of the array is:", secondElement); // Log the 2nd element
+
+// Question 33: add two elements to the array and log the result
+const myArray4 = [1, 2, 3]; // Define the array myArray4
+myArray4.push(4, 5); // Add two elements to the array
+console.log("Array after adding two elements:", myArray4); // Log the updated array
+
+// Question 34: remove the last element of the array and log the result
+const myArray5 = [1, 2, 3, 4, 5]; // Define the array myArray5
+myArray5.pop(); // Remove the last element of the array
+console.log("Array after removing the last element:", myArray5); // Log the updated array
+
+// Question 35: extract frsit three element of the array and log the result
+const myArray6 = [1, 2, 3, 4, 5,6,7,8,9,10]; // Define the array myArray6
+const firstThreeElements = myArray6.slice(0, 3); // Extract the first three elements of the array
+console.log("First three elements of the array are:", firstThreeElements); // Log the first three elements
+
+// Question 36: create an array and find the index of a specific element in that array
+const myArray7 = [10, 20, 30, 40, 50]; // Define the array myArray7
+const elementToFind = 30; // Define the element to find
+const indexOfElement = myArray7.indexOf(elementToFind); // Find the index of the element in the array
+console.log(`Index of ${elementToFind} in the array is:`, indexOfElement); // Log the index of the element
+
+// Question 37: create an array and check if a specific element exists in that array .includes()
+
+const myArray8 = [1, 2, 3, 4, 5]; // Define the array myArray8
+const elementToCheck = 3; // Define the element to check
+const elementExists = myArray8.includes(elementToCheck); // Check if the element exists in the array
+console.log(`Does ${elementToCheck} exist in the array?`, elementExists); // Log the result
+
+// Question 38: combine two arrays and log the result
+const array1 = [1, 2, 3]; // Define the first array
+const array2 = [4, 5, 6]; // Define the second array
+const combinedArray = array1.concat(array2); // Combine the two arrays
+console.log("Combined array:", combinedArray); // Log the combined array
+
+// Question 39: create an array and sort it in ascending order using boble sort using for loop
+const unsortedArray = [5, 2, 8, 1, 4]; // Define the unsorted array
+let sortedArray = [...unsortedArray]; // Create a copy of the unsorted array
+const arrayLength = sortedArray.length; // Get the length of the array
+
+for (let i = 0; i < arrayLength - 1; i++) { // Loop through the array
+    for (let j = 0; j < arrayLength - i - 1; j++) { // Loop through the unsorted part of the array
+        if (sortedArray[j] > sortedArray[j + 1]) { // Compare adjacent elements
+            // Swap the elements if they are in the wrong order
+            const temp = sortedArray[j]; // Store the current element in a temporary variable
+            sortedArray[j] = sortedArray[j + 1]; // Move the next element to the current position
+            sortedArray[j + 1] = temp; // Place the current element in the next position
+        }
+    }
+}
+console.log("Sorted array in ascending order:", sortedArray); // Log the sorted array
+
+// Question 40: create a copy of an array without manupulating the original array
+const originalArray = [1, 2, 3, 4, 5]; // Define the original array
+const copiedArray = [...originalArray]; // Create a copy of the original array using spread operator
+console.log("Original array:", originalArray); // Log the original array
+console.log("Copied array:", copiedArray); // Log the copied array
+
+// Question 41: 
