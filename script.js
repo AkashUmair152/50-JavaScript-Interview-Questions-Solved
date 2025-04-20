@@ -162,4 +162,29 @@ for (let row = 1; row <= rows; row++) { // Loop through each row
     console.log(gridRow); // Log the current row of the grid
 }
 
-// Question 28: 
+// Question 28: use a for loop to reverse an arry [1,2,3,4,5]
+const myArray2 = [1, 2, 3, 4, 5]; // Define the array myArray2
+const reversedArray = []; // Initialize the reversedArray variable
+for (let p = myArray2.length - 1; p >= 0; p--) { // Loop from the last index to the first index
+    reversedArray.push(myArray2[p]); // Append the current element to the reversedArray
+}
+console.log("Reversed array:", reversedArray); // Log the reversed array
+
+// Question 29: use a while loop to log number from 1 to 100 divisible by 5
+let q = 1; // Initialize the loop variable
+while (q <= 100) { // Loop from 1 to 100
+    if (q % 5 === 0) { // Check if the number is divisible by 5
+        console.log(q); // Log the number
+    }
+    q++; // Increment the loop variable
+}
+
+// Question 30: make a for .. in  loop to iterate over an object and logs its keys and values
+const myObject = { // Define the object myObject
+    name: "Akash",
+    age: 25,
+    hobby: "cooking"
+};
+for (const key in myObject) { // Loop through each key in the object
+    console.log(`Key: ${key}, Value: ${myObject[key]}`); // Log the key and its corresponding value
+}
