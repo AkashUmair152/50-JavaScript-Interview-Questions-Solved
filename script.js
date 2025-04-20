@@ -336,3 +336,31 @@ function reverseString(str) { // Define the function reverseString
 const myString4 = "Hello"; // Define the string myString4
 const reversedString = reverseString(myString4); // Call the function to reverse the string
 console.log(`Reversed string of "${myString4}" is:`, reversedString); // Log the reversed string
+
+// Question 48: write a function that takes an array and returns the largest number in that array
+function findLargestNumber(array) { // Define the function findLargestNumber
+    let largest = array[0]; // Initialize the largest variable with the first element of the array
+    for (const number of array) { // Loop through each number in the array
+        if (number > largest) { // Check if the current number is larger than the largest number
+            largest = number; // Update the largest number
+        }
+    }
+    return largest; // Return the largest number
+}
+const myArray10 = [1, 2, 3,100, 4, 5]; // Define the array myArray10
+const largestNumber = findLargestNumber(myArray10); // Call the function to find the largest number
+console.log("Largest number in the array is:", largestNumber); // Log the largest number
+
+// Question 49: write a function that combines strings in kabab-case ("hello-world")
+function toKebabCase(str) { // Define the function toKebabCase
+    return str.split(" ").join("-").toLowerCase(); // Split the string into an array, join it with "-", and convert to lowercase
+}
+const myString5 = "Hello World"; // Define the string myString5
+const kebabCaseString = toKebabCase(myString5); // Call the function to convert to kebab-case
+console.log(`Kebab-case string of "${myString5}" is:`, kebabCaseString); // Log the kebab-case string
+
+// Question 50: write a function everytime it called logs "Hello World"
+function logHelloWorld() { // Define the function logHelloWorld
+    console.log("Hello World"); // Log "Hello World"
+}
+logHelloWorld(); // Call the function to log "Hello World"  
