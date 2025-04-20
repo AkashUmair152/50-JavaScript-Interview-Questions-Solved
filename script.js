@@ -258,4 +258,81 @@ const copiedArray = [...originalArray]; // Create a copy of the original array u
 console.log("Original array:", originalArray); // Log the original array
 console.log("Copied array:", copiedArray); // Log the copied array
 
-// Question 41: 
+// Question 41: write a function that checks the even or odd number
+function checkEvenOdd(number) { // Define the function checkEvenOdd
+    if (number % 2 === 0) { // Check if the number is even
+        console.log(`${number} is an even number.`); // Log that the number is even
+    } else { // If the number is odd
+        console.log(`${number} is an odd number.`); // Log that the number is odd
+    }
+}
+
+checkEvenOdd(10); // Call the function with an even number
+checkEvenOdd(7); // Call the function with an odd number
+
+
+// Question 42: write a function to calculate the area of circle with its radius
+function calculateAreaOfCircle(radius) { // Define the function calculateAreaOfCircle
+    const area = Math.PI * radius * radius; // Calculate the area of the circle
+    return area; // Return the calculated area
+}
+const radius = 3; // Define the radius of the circle
+const areaOfCircle = Math.round(calculateAreaOfCircle(radius)); // Call the function to calculate the area
+console.log(`Area of the circle with radius ${radius} is:`, areaOfCircle); // Log the area of the circle
+
+// Question 43: write a function to calculate that accept an array and return the sum of all elements in that array
+
+function calculateArraySum(array) { // Define the function calculateArraySum
+    let sum = 0; // Initialize the sum variable
+    for (const element of array) { // Loop through each element in the array
+        sum += element; // Add the current element to the sum
+    }
+    return sum; // Return the calculated sum
+}
+const myArray9 = [1, 2, 3, 4, 5]; // Define the array myArray9
+const arraySum = calculateArraySum(myArray9); // Call the function to calculate the sum
+console.log("Sum of all elements in the array is:", arraySum); // Log the sum of the array elements
+
+// Question 44: write a function that checks if a string is start with specfics character 
+
+function startsWithCharacter(string, character) { // Define the function startsWithCharacter
+    if (string.startsWith(character)) { // Check if the string starts with the specified character
+        console.log(`"${string}" starts with "${character}".`); // Log that the string starts with the character
+    } else { // If the string does not start with the character
+        console.log(`"${string}" does not start with "${character}".`); // Log that the string does not start with the character
+    }
+}
+const myString3 = "Hello, World!"; // Define the string myString3
+const characterToCheck = "H"; // Define the character to check
+startsWithCharacter(myString3, characterToCheck); // Call the function to check if the string starts with the character
+
+// Question 45: write a function to find the maximum of two numbers
+function findMaximum(a, b) { // Define the function findMaximum
+    return a > b ? a : b; // Return the maximum of the two numbers using ternary operator
+}
+const num1 = 10; // Define the first number
+const num2 = 20; // Define the second number
+const maxNumber = findMaximum(num1, num2); // Call the function to find the maximum number
+console.log(`Maximum of ${num1} and ${num2} is:`, maxNumber); // Log the maximum number
+
+// Question 46: write a function that gets a number and return its factroial 
+
+function fact(){
+    const number = 5; // Define the number to calculate the factorial
+    let result = 1; // Initialize the result variable
+    for (let i = 1; i <= number; i++) { // Loop from 1 to the number
+        result *= i; // Multiply the current number to the result
+    }
+    return result; // Return the calculated factorial
+}
+const factorialResult = fact(); // Call the function to calculate the factorial
+console.log(`Factorial of 5 is:`, factorialResult); // Log the factorial result
+
+// Question 47: write a function that takes a string and returns its reverse
+
+function reverseString(str) { // Define the function reverseString
+    return str.split("").reverse().join(""); // Split the string into an array, reverse it, and join it back into a string
+}   
+const myString4 = "Hello"; // Define the string myString4
+const reversedString = reverseString(myString4); // Call the function to reverse the string
+console.log(`Reversed string of "${myString4}" is:`, reversedString); // Log the reversed string
