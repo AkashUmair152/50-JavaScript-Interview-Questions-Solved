@@ -364,3 +364,7 @@ function logHelloWorld() { // Define the function logHelloWorld
     console.log("Hello World"); // Log "Hello World"
 }
 logHelloWorld(); // Call the function to log "Hello World"  
+
+logHelloWorld(); // Call the function again to log "Hello World"
+logHelloWorld(); // Call the function again to log "Hello World"
+logHelloWorld(); // Call the function again to log "Hello World"
