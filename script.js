@@ -380,4 +380,18 @@ function isPrime(number) { // Define the function isPrime
 
 const testNumber = 29; // Define a number to test
 const isTestNumberPrime = isPrime(testNumber); // Call the function to check if the number is prime
+console.log(`Is ${testNumber} a prime number?`, isTestNumberPrime); // Log the result// Question 51: Write a function that checks if a number is a prime number
+
+function isPrime(number) { // Define the function isPrime
+    if (number <= 1) return false; // Numbers less than or equal to 1 are not prime
+    for (let i = 2; i <= Math.sqrt(number); i++) { // Loop from 2 to the square root of the number
+        if (number % i === 0) { // Check if the number is divisible by i
+            return false; // If divisible, it's not a prime number
+        }
+    }
+    return true; // If no divisors are found, it's a prime number
+}
+
+const testNumber = 29; // Define a number to test
+const isTestNumberPrime = isPrime(testNumber); // Call the function to check if the number is prime
 console.log(`Is ${testNumber} a prime number?`, isTestNumberPrime); // Log the result
