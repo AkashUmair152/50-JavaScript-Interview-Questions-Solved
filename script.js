@@ -409,3 +409,4 @@ function isPrime(number) { // Define the function isPrime
 const testNumber = 29; // Define a number to test
 const isTestNumberPrime = isPrime(testNumber); // Call the function to check if the number is prime
 console.log(`Is ${testNumber} a prime number?`, isTestNumberPrime); // Log the result
+
