@@ -409,3 +409,10 @@ function isPrime(number) { // Define the function isPrime
 const testNumber = 29; // Define a number to test
 const isTestNumberPrime = isPrime(testNumber); // Call the function to check if the number is prime
 console.log(`Is ${testNumber} a prime number?`, isTestNumberPrime); // Log the result
+
+// Question 52: Write a function that checks if a string is a palindrome
+function isPalindrome(str) { // Define the function isPalindrome
+    const reversedStr = str.split("").reverse().join(""); // Reverse the string
+    return str === reversedStr; // Check if the original string is equal to the reversed string
+}   
+rr
