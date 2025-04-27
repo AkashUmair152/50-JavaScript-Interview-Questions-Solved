@@ -415,4 +415,3 @@ function isPalindrome(str) { // Define the function isPalindrome
     const reversedStr = str.split("").reverse().join(""); // Reverse the string
     return str === reversedStr; // Check if the original string is equal to the reversed string
 }   
-rr
